@@ -1,5 +1,45 @@
 @import url('https:fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
+}
+
+.main {
+    position: relative;
+    min-height: 100vh;
+    background: radial-gradient(#f0483a, #d10a20);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.logo {
+    max-width: 90px;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
 }
