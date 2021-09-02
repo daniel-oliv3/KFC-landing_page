@@ -81,6 +81,17 @@
                 ActiveSlide(i);
             }
         })
+
+        //Função do botão proximo
+        next.addEventListener('click', function(){
+            if(i == slides.length - 1){
+                i = 0;
+                ActiveSlide(i);
+            }else{
+                i++;
+                ActiveSlide(i);
+            }
+        })
     </script>
   </body>
 </html>
