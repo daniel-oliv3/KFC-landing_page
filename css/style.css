@@ -52,6 +52,9 @@ header {
 .content {
     position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .content .text {
@@ -92,4 +95,51 @@ header {
 
 .btn:hover {
     letter-spacing: 2px;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider .slides {
+    display: none;
+}
+
+.slider .slides.active {
+    display: block;
+}
+
+.slider .slides img {
+    width: 100%;
+    max-width: 600px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 30px 100px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.sci {
+    display: flex;
+}
+
+.sci li {
+    list-style: none;
+}
+
+.sci li a {
+    color: #fff;
+    font-size: 2em;
+    margin-right: 20px;
+    display: inline-block;
+    transition: 0.25s;
+}
+
+.sci li a:hover {
+    transform: translateY(-5px);
 }
