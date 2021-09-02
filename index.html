@@ -71,8 +71,8 @@
             slides[n].classList.add('active');
         }
 
-        //Função do botão anterior
-        prev.addEventListener('click', function(){
+         //Função do botão proximo NEXT
+         next.addEventListener('click', function(){
             if(i == slides.length - 1){
                 i = 0;
                 ActiveSlide(i);
@@ -82,16 +82,18 @@
             }
         })
 
-        //Função do botão proximo
-        next.addEventListener('click', function(){
-            if(i == slides.length - 1){
-                i = 0;
+        //Função do botão anterior PREV
+        prev.addEventListener('click', function(){
+            if(i == 0){
+                i = slides.length - 1;
                 ActiveSlide(i);
             }else{
-                i++;
+                i--;
                 ActiveSlide(i);
             }
         })
+
+       
     </script>
   </body>
 </html>
